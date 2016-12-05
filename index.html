@@ -1,0 +1,259 @@
+<script type="text/javascript">
+
+	// Printing Stuff
+	// semicolons are implied as long as you make a new line.
+	// if on same line, add semicolon between statements
+
+	// window.alert("Hello, World.")
+	// alert("Hello, world.");
+	// alert("Hello, 2");
+
+	// console.log("Hello, World");
+	// console.dir("Hello, World");
+
+	// document.write("Hello, World");
+	// window.document.write("Hello, World");
+
+	// A dot followed by () is a METHOD! (or function)
+	// A dot not followed by () is a PROPERTY!
+
+	// Variables - string/letters, numbers, or any other stuff that you can make with a keyboard.
+	// A variable is just a fast way to refer to something that is not-fast.
+
+	// Data-types
+	// -Strings - English-type stuff.
+	// -Numbers - something with digits and the stuff that goes with them. (-, .)
+	// - - Floats, Integers
+	// - Booleans - True or False, 1 or 0, On or Off,
+	// - Arrays - list
+	// - Objects - variable or variables
+
+	// window.console.dir(console)
+
+	// Strings - "" or ''
+	// 1. var means I'm declaring a variable
+	// 2. Is the name of the variable. The value can be referenced from this point forward with just the variable name
+	// var fullName = "Sean Bhupathi"; //Declaring
+	// fullName = "Not Sean Bhupathi"; //Assigning
+	// fullName = 'Sean Bhupathi';
+	// fullName = 'Sean "The Man" Bhupathi';
+	// // fullName = "Sean "The Man" Bhupathi"; //Big NONO
+	// fullName = "Sean \"The Man\" Bhupathi";
+	// fullName = 'Joe O\'Malley';
+	// document.write(fullName);
+
+	// // Numbers
+	// var myAge = 27; //Integer
+	// var myAge = 27.33; //Float
+	// var myAgeAsAString = "27";
+
+	// // Operators
+	// document.write(myAge + 1);
+	// // If there is a string ANYWHERE, the whole thing becomes a string.
+	// document.write(myAgeAsAString + 1);
+	// console.log("aString" + {});
+	// console.log("aString" + []);
+
+	// var doubleMyAge = myAge + myAge;
+	// doubleMyAge = myAge * 2;
+	// var halfMyAge = myAge / 2;
+
+	// var floatNumber = 3.14;
+	// // console.log(typeof(floatNumber));
+	// var makeMeAnInteger = parseInt(floatNumber);
+	// console.log(makeMeAnInteger);
+	// console.log(.2 + .1);
+
+	// // Booleans - True or False, 1 or 0.
+	// var theTruth = true; //true and false are keywords
+	// console.log(typeof(theTruth));
+	// // var tryAgain = True;
+	// theTruth = 1;
+	// console.log(typeof(theTruth));
+	// var theLie = false;
+
+	// // Modulus - %
+	// var amIEven = 10 % 2; //divide 2 into 10 and return the remainder.
+	// console.log(amIEven);
+	// amIEven = 11 % 2;
+	// console.log(amIEven);
+
+	// var addOneToMe = 1;
+	// // addOneToME = addOneToME + 1;
+	// addOneToMe++; //increment by 1
+	// addOneToMe--
+	// addOneToMe += 10; //addOneToMe = addOneToMe + 10
+	// console.log(addOneToMe);
+	// addOneToMe -= 10; //addOneToMe = addOneToMe - 10
+	// C
+	// C++
+
+	// Prefix
+	// If you want your operation to happen ASAP, put the ++ at the beginning
+	// myAge = 27
+	// console.log(myAge++);
+	// console.log(++myAge);
+	// POSTfix if you are cool with waiting a line, put ++ at the end
+
+	// Order of operations = what you learned in 3th grade
+	// * and / alsways come first, then left to right
+	// + and - always come second then left to right
+	// () Overrides ALL
+
+	// var aClassicLine = "The meaning of life is " + 42; //works
+	// aClassicLine = "The meaning of life is " + 4 + 2; //works
+	// aClassicLine = "The meaning of life is " + 40 + 2; //fails
+	// aClassicLine = "The meaning of life is " + (40 + 2); //works
+	// console.log(aClassicLine);
+
+	//Prompts
+	// Take 2 arguments, the first is the message to display in the prompt.
+	// The second is the default (this one is optional)
+	// var getUserName = prompt("What is your name?", "Jim");
+	// console.log(getUserName);
+	// JS prompts are annoying. Don't use them
+	// They are limited in scope to the page you are on. The second the user leaves the page, the info is lost
+	// We will use HTML forms and/or AJAX for user data
+
+	// Conditionals
+	// var classSize = 16;
+	// var question = "How big is your coding class?";
+	// var response = prompt(question, classSize);
+
+	// ==, is the way to compare left and right
+	// !=, is the way to compare if left and right are not equal
+	//===, same as ==, but it checks to make sure the DT are equal as well
+
+	// 16 == "16" //true
+	// 16 === "16" //false
+
+	// console.log(typeof(response));
+
+	// A prompt returns a string
+	// if(response === 16){
+	// 	console.log("You are in the November class");
+	// }
+
+	// if(response !== 16){
+	// 	console.log("You are NOT in the November class")
+	// }
+
+	// if((response == 16)) && (typeof(response == 'number')){
+	// }
+
+	// Number method will convert the parameter into a number
+	// if(Number(response) === 16){
+	// 	console.log("5 rows or 4?");
+	// }
+
+	// var whatAmI = Number("DigitalCrafts");
+	// // console.log(whatAmI);
+	// if(typeof(whatAmI) === 'number'){
+	// 	console.log("You're a number");
+	// }
+
+	// Else
+	// var response = prompt("How many in your class?");
+	// if(response == 16){
+	// 	console.log("You are in the November class.");
+	// }
+	// else if(response == 15){
+	// 	console.log("You were in the July class");
+	// }
+	// else{
+	// 	console.log("Conditional failed");
+	// }
+	// if(response != 16){
+	// 	console.log("You are not in th November class");
+	// }
+
+
+	// Window has a Math object
+	// // http://www.w3schools.com/jsref/jsref_obj_math.asp
+	// var randomNumber = Math.random(); //16 digit decimal
+	// console.log(randomNumber);
+	// var between = Math.ceil(randomNumber * 10);
+	// console.log(between);
+
+// Generate a number between 1-10.
+// Make a prompt box that asks the user for a number between 1-10
+// If they match, congrat the user.
+// If they dont, console the user and tell them what is was
+
+// - if they are wrong, but within 2 of the number, tell them they were close and what the number was
+// - if they are wrong but not within 2, mock them.
+
+// Lastly, make sure they entered a number
+//response=userinput
+var userInput = prompt("Guess a number between 1 and 10");
+	console.log("You guessed " + response);
+var randomNumber = Math.random();
+	console.log(randomNumber)
+var between = Math.ceil(randomNumber * 10);
+var inputAsNumber = parseInt(userInput);
+	if(isNan(inputAsNumber)){
+		console.log("You did not enter a number")
+	}else if{
+		if(inputAsNumber === between){
+			console.log("You guessed right!")
+		}else if( (inputAsNumber === between +- 2) || (inputAsNumber === between +- 1)){
+			console.log("You were close! The number was..." + between)
+		}
+	}else{
+		console.log("You were not close")
+	}
+// if(response == between){
+// 	console.log("Congratulations! You guessed the right number!");
+// }
+// if(response != between){
+// 	console.log("Sorry the correct number was " + between);
+// }
+
+// if((inputAsNumber > 0) || (inputAsNumber < 1)){
+
+// 	if((inputAsNumber > 10) || (inputAsNumber < 1)){
+// 		console.log("You entered a number but not within range!")
+// 	}
+// 	var plusOne = between + 1
+// 	var plusTwo = between + 2
+// 	var minusOne = between - 1
+// 	var minusTwo = between - 2
+
+// 	if(inputAsNumber == between){
+// 		console.log("Congrats you won the game!");
+// 	}else if(
+// 		(inputAsNumber == plusOne) ||
+// 		(inputAsNumber == plusTwo) ||
+// 		(inputAsNumber == minusOne) ||
+// 		(inputAsNumber == minusTwo) ||
+// 	){
+// 		console.log("You were close! within 2. Try again! Your answer was " + inputAsNumber + ". The answer was " + between);
+// 	}else{
+// 		console.log("Loser!(you arent within 2)")
+// 	}
+// }
+// 
+
+// if(inputAsNumber === NaN){
+// 	console.log("Hit!");
+// }else{
+// 	console.log("Miss..");
+// }
+
+// var isInputNan = isNaN(inputAsNumber);
+
+// if(isInputNan){
+// 	//the user entered something that is not a number
+// }
+
+
+// else if(response > 10){
+// 	console.log("That number is not between 1 and 10, you fool!")
+// }
+// else if(response < 1){
+// 	console.log("That number is not between 1 and 10, you fool!")
+// }
+
+
+
+</script>

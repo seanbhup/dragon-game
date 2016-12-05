@@ -1,0 +1,143 @@
+<script type="text/javascript">
+
+	//Arrays
+	var student1 = "Sean";
+	var student2 = "Drew";
+	var student3 = "Daniel";
+	var student4 = "Kyle";
+
+	// Arrays!! is a single variable with a numbered list of parts.
+	var students = [];
+	students = [
+		"Sean", 
+		"Drew", 
+		"Daniel", 
+		"Kyle"
+		];
+	console.log(students);
+
+	var nfcSouth1 = "Falcons"
+	var nfcSouth2 = "Saints"
+	var nfcSouth3 = "Panthers"
+	var nfcSouth4 = "Bucs"
+
+	var nfcSouth = [
+		"Falcons",
+		"Saints",
+		"Panthers",
+		"Bucs",
+		];
+
+	// any datatype can go in any position
+	// booleans
+	// Numbers
+	// strings
+	// objects
+	// Arrays
+
+	// if an array, the first element, unless otherwise declared, is always 0
+	// console.log(nfcSouth[0]);
+	// console.log(nfcSouth[3]);
+
+	// Cool methods for an array...
+	console.log(students);
+	students.pop(); //will remove the last element from the array
+	console.log(students);
+
+	students.push("Ryan"); //push adds an element to the end of the array
+	console.log(students); 
+
+// Make an array with at least four students in class.
+// Prompt the user for their name
+// If they enter a name in the array then alert them, You are in the class!
+// Else, add them to the array
+
+	var studentsInClass = []
+	studentsInClass = [
+		"Sean", 
+		"Drew", 
+		"Daniel", 
+		"Kyle"
+		];
+	var userInput = prompt("Please enter your name");
+
+
+	if ((userInput == studentsInClass[0])|| 
+		(userInput == studentsInClass[1])|| 
+		(userInput == studentsInClass[2])|| 
+		(userInput == studentsInClass[3])){
+		console.log("You are on the class list already, " + userInput + "!");
+	}else{
+		studentsInClass.push(userInput);
+		console.log("You have been added to the class list, " + userInput);
+	}  
+
+	// if (userInput == studentsInClass[0]){
+	// 	console.log("You are on the class list already, " + userInput + "!");
+	// }
+	// else if (userInput == studentsInClass[1]){
+	// 	console.log("You are on the class list already, " + userInput + "!");
+	// }
+	// else if (userInput == studentsInClass[2]){
+	// 	console.log("You are on the class list already, " + userInput + "!");
+	// }
+	// else if (userInput == studentsInClass[3]){
+	// 	console.log("You are on the class list already, " + userInput + "!");
+	// }
+	// else{
+	// 	studentsInClass.push(userInput);
+	// 	console.log("You have been added to the class list, " + userInput);
+	// }
+	console.log(studentsInClass);
+
+	var studentSeat = []
+	studentSeat = [
+		"Sean",
+		"Drew",
+		"Daniel",
+		"Kyle",
+		"Rishi",
+		"Liz",
+		"Anna",
+		"Ryan",
+		"Michael",
+		"Casey",
+		"Sarah",
+		"Amber",
+		"Connie",
+		"Paul",
+		"Andy",
+		"Mason"]
+
+	var studentSeat = prompt("Enter a seat number")
+	console.log(students[studentSeat -1]);
+
+// Loop
+	// for, while, foreach. map.
+	// for takes 3 parameters
+		// 1. initialize a counter (i = increment)
+		// 2. condition on which to keep the loop going
+		// 3. what to do each time through the loop (at the end)
+
+// Create a boolean called "Found"
+	var found = false;
+
+	for (var i = 0; i < students.length; i++){
+		// console.log(i);
+		if (students[i] == userInput){
+			found = true;
+			break; //this will cause the for loop to exit immediately
+		}
+		// else{
+		// 	students.push(userInput)
+		// }
+	}
+	if(found){ //If found is true 
+		console.log("You are in the class");
+	}else{
+		students.push(userInput)
+	}
+						
+//indexOf() returns position within an array (-1 means it isnt there)
+
+</script>
