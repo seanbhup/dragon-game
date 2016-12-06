@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
+<!-- saved from url=(0087)file:///Users/SeanBhupathi/Desktop/DigitalCrafts/11-16immersive/unit1/js101/dragon.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title>Fight the Dragon</title>
 </head>
 <body>
 
 	<div id="game">
 
-		<img name="dragon" src="dragon.jpg">
-		<div id="encounter">You've encountered a dragon. Do you fight?</div>
-		<img name="hero" src="hero.png">
-		<img name="die1" src="d1.gif">
-		<img name="die2" src="d1.gif">
+		<img name="dragon" src="./Fight the Dragon_files/dead-dragon.jpg">
+		<div id="encounter">You destroyed the dragon!</div>
+		<img name="hero" src="./Fight the Dragon_files/hero-win.png">
+		<img name="die1" src="./Fight the Dragon_files/d6.gif">
+		<img name="die2" src="./Fight the Dragon_files/d4.gif">
 
-		<input type="button" onclick="rollDice();" value="FIGHT! (You must roll a 9 or higher to survive!">
+		<input type="button" onclick="rollDice();" value="FIGHT! (You must roll a 9 or higher to survive the first attack!">
 		<input type="button" onclick="flee();" value="FLEE!">
 
-		<div id="userRoll">
-			
-		</div>
+		<div id="userRoll">10damage dealt!</div>
 	</div>
 
 	<script type="text/javascript">
@@ -34,7 +32,7 @@
 		document.images.die2.src = "d" + randomDie2 + ".gif";
 
 
-		document.getElementById('userRoll').innerHTML = randomDie1 + randomDie2 + " damage dealt!"
+		document.getElementById('userRoll').innerHTML = randomDie1 + randomDie2 + "damage dealt!"
 
 		if(randomDie1 + randomDie2 >= 9){
 			document.images.hero.src= "hero-win.png"
@@ -52,8 +50,8 @@
 	}
 	</script>
 
-</body>
-</html>
+
+
 
 <!-- var slaying = true
 var youHit = Math.floor(Math.random() * 2)
@@ -62,7 +60,7 @@ var totalDamage = 0
 
 while(slaying){
     if (youHit) {
-        console.log("You hit the dragon for " + damageThisRound + " blasting points!");
+        console.log("You blasted that dragon bitch for" + " " + damageThisRound + " " + "blasting points!");
         totalDamage += damageThisRound;
         if (totalDamage >= 4){
             console.log("The dragon has been blasted back to hell!!! YAYAY!");
@@ -76,4 +74,4 @@ while(slaying){
         console.log("The dragon just blasted you in the face so hard that your face blasted open!");
         slaying = false;
     }
-} -->
+} --></body></html>
