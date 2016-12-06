@@ -1,0 +1,25 @@
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+
+1. Count up to 1000.
+2. Each new number, as we count, check to see if it's a multiple of 3 or 5.
+3a. If it is, add it to our sum.
+3b. If it is not, do nothing.
+4. Stop when we hit 1000.
+
+<script type="text/javascript">
+var summation = 0
+function sumOfAllNaturalNumbers (number){
+	for(var i = 0; i < number; i++){
+		if((i % 3 === 0) || (i % 5 === 0)){
+			summation += i;
+		}
+	}
+	console.log(summation);
+}
+
+sumOfAllNaturalNumbers(1000)
+
+</script>

@@ -1,0 +1,46 @@
+html {
+	background-color: gray;
+	font-family: helvetica;
+}
+
+#encounter {
+	font-size: 40px;
+	color: black;
+	background-color: ;
+}
+
+#game {
+	text-align: center;
+}
+
+#dragon {
+	text-align: center;
+	height: 300px;
+}
+
+#hero {
+	margin-right: 700px;
+}
+
+#dice {
+
+}
+
+#fight-button input {
+	font-size: 30px;
+	background-color: green;
+	color: black;
+
+}
+
+#or {
+	font-size: 40px;
+	color: black;
+	font-weight: bold;
+}
+
+#flee-button input{
+	font-size: 30px;
+	background-color: red;
+	color: black;
+}

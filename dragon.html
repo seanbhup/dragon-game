@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+	<link rel="stylesheet" type="text/css" href="dragon.css">
+
 	<title>Fight the Dragon</title>
 </head>
 <body>
 
 	<div id="game">
+		<div id="encounter">MR. BASE! YOU HAVE ENCOUNTERED A DRAGON ON YOUR WALK HOME FROM WORK! WILL YOU FIGHT?</div>
+			<div id="dragon">
+				<img name="dragon" src="dragon.jpg">
+			</div>
+			<div id="hero">
+				<img name="hero" src="hero.png">
+			</div>
+			<div id="dice">
+				<img name="die1" src="d1.gif">
+				<img name="die2" src="d1.gif">
+			</div>
+			<div id="fight-button">
+				<input type="button" onclick="rollDice();" value="FIGHT!">
+			</div>
+			<div id="or">OR
+			</div>
+			<div id="flee-button">
+				<input type="button" onclick="flee();" value="FLEE!">
+			</div>
 
-		<img name="dragon" src="dragon.jpg">
-		<div id="encounter">You've encountered a dragon. Do you fight?</div>
-		<img name="hero" src="hero.png">
-		<img name="die1" src="d1.gif">
-		<img name="die2" src="d1.gif">
-
-		<input type="button" onclick="rollDice();" value="FIGHT! (You must roll a 9 or higher to survive!">
-		<input type="button" onclick="flee();" value="FLEE!">
-
-		<div id="userRoll">
+			<div id="userRoll">
 			
 		</div>
 	</div>
