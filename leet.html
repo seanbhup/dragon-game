@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leet Speak</title>
+
+	<input id="input-word" type="text" placeholder="Write something!">
+	<button onclick="convertToLeet()">Convert to Leet</button>
+
+</head>
+<body>
+
+<script type="text/javascript">
+	
+
+var leet = [
+	["A", "4"],
+	["E", "3"],
+	["G", "6"],
+	["I", "1"],
+	["O", "0"],
+	["S", "5"],
+	["T", "7"],
+]
+
+
+function convertToLeet(){
+	var words = document.getElementById("input-word").value
+	var upperCaseWords = words.toUpperCase();
+	var newWords = words.split("")
+	for (var i = 0; i < words.length; i++) {
+		if(newWords[i] == leet[i][0]){
+			newWords[i] = leet[i][1];
+		}
+	}
+	newWords.join("");
+	console.log(newWords);
+}
+
+
+
+
+</script>
+
+
+</body>
+</html>

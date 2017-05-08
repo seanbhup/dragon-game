@@ -184,24 +184,21 @@
 // - if they are wrong but not within 2, mock them.
 
 // Lastly, make sure they entered a number
-//response=userinput
+// response=userinput
+var randomNumber = Math.ceil(Math.random() * 10);
+	console.log("The number was " + randomNumber)
 var userInput = prompt("Guess a number between 1 and 10");
-	console.log("You guessed " + response);
-var randomNumber = Math.random();
-	console.log(randomNumber)
-var between = Math.ceil(randomNumber * 10);
+	console.log("You guessed " + userInput);
 var inputAsNumber = parseInt(userInput);
-	if(isNan(inputAsNumber)){
-		console.log("You did not enter a number")
-	}else if{
-		if(inputAsNumber === between){
-			console.log("You guessed right!")
-		}else if( (inputAsNumber === between +- 2) || (inputAsNumber === between +- 1)){
-			console.log("You were close! The number was..." + between)
-		}
-	}else{
-		console.log("You were not close")
-	}
+if(isNaN(inputAsNumber)){
+	console.log("You did not enter a number")
+}else if(inputAsNumber === randomNumber){
+		console.log("You guessed right!")
+}else if(Math.abs((randomNumber - inputAsNumber <= 2))){
+		console.log("You were close! The number was..." + randomNumber)
+}else{
+	console.log("You were not close")
+}
 // if(response == between){
 // 	console.log("Congratulations! You guessed the right number!");
 // }
@@ -232,7 +229,7 @@ var inputAsNumber = parseInt(userInput);
 // 		console.log("Loser!(you arent within 2)")
 // 	}
 // }
-// 
+//
 
 // if(inputAsNumber === NaN){
 // 	console.log("Hit!");

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Long Vowels</title>
+</head>
+<body>
+
+<input id="input-word" type="text" placeholder="Write a word with a vowel">
+<button onclick="wordWithVowel()">Submit</button>
+
+<script type="text/javascript">
+	
+var vowels = [
+	"a",
+	"e",
+	"i",
+	"o",
+	"u"]
+
+function wordWithVowel(){
+	var wordWithVowel = document.getElementById("input-word").value;
+
+	for (var i = 0; i < wordWithVowel.length; i++) {
+		for (var j = 0; j < vowels.length; j++) {
+
+			var testVar = i + 1
+
+			if((wordWithVowel[i] == vowels[j]) && (wordWithVowel[testVar] == vowels[j])){
+				var newWord = wordWithVowel.split("");
+				var secondWord = vowels[j] + vowels[j] + vowels[j] + vowels[j] + vowels[j]
+				newWord.splice(i,0,secondWord);
+				var thirdWord = newWord.join("");
+
+				console.log(thirdWord);
+				
+			}
+		}
+	}
+}
+
+
+
+</script>
+
+
+</body>
+</html>

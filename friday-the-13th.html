@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friday the 13
+	</title>
+</head>
+<body>
+
+<input id="input-year" type="text" placeholder="Enter a Year">
+<button onclick="yearEntered()">Submit</button>
+
+<script type="text/javascript">
+
+var inputYear = 0;
+var numCounter = 0;
+
+function yearEntered(){
+	var year = document.getElementById("input-year").value;
+
+	for (var i = 0; i < 12 ; i++) {
+	var d = new Date(inputYear,i,13)
+	d.getDay()
+
+	if(d.getDay() == 5){
+		numCounter++
+	}
+}
+console.log(numCounter)
+numCounter = 0;
+
+	inputYear = year;
+}
+
+var d = new Date(2016,11,9);
+// console.log(d.getDay());
+
+for (var i = 0; i < 12 ; i++) {
+	var d = new Date(inputYear,i,13)
+	d.getDay()
+
+	if(d.getDay() == 5){
+		numCounter++
+	}
+}
+console.log(numCounter)
+document.getElementById("")
+numCounter = 0;
+
+
+
+
+
+
+	</script>
+</body>
+</html>

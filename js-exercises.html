@@ -1,14 +1,14 @@
 <!-- Exercises:
 1.Given a number between 0 and 6 representing the days of the week, print "Go to work." if it's a work day and "Sleep in." if it's a weekend day. You can set up an array for the days of the week, or for extra credit, you can check out the JS Date object here).
- 
+
 2. Given a month number, between 1 and 12, and a year, print the number of days in that month - accounting for leap years.
- 
+
 3. Given the amount of a bill as a number, and a level of service - which can be "good", "fair", or "bad", print the total bill with the tip included. The amount of tip given for each level of service is defined by:
- 
+
 "good" -> 20%
 "fail" -> 15%
 "bad"  -> 10%
- 
+
 Extra: Add to "Tip Calculator"...you are also given the number of people to divide the total into. Print the amount for each person to pay. -->
 
 <script type="text/javascript">
@@ -41,7 +41,7 @@ console.log(workOrSleep(2))
 
 function daysInMonth (month, year){
 
-	var days = [
+	var daysByMonth = [
 	"31",
 	"28",
 	"31",
@@ -55,16 +55,31 @@ function daysInMonth (month, year){
 	"30",
 	"31"
 	]
-	var feb = days[1]
 
-	if (month === days[1]) && (year % 400 === 0)
-		return "29"
-	}else if()
+
+	if (month === daysByMonth[1]) && (year % 4 === 0){
+		console.log("29");
+	}else if(month === daysByMonth[0]) ||
+			(month === daysByMonth[2]) ||
+			(month === daysByMonth[4]) ||
+			(month === daysByMonth[6]) ||
+			(month === daysByMonth[7]) ||
+			(month === daysByMonth[9]) ||
+			(month === daysByMonth[11])
+		{
+			console.log("31");
+	}else{
+		console.log("30");
+	}
+
+
 
 }
 
+console.log(daysInMonth(1));
 
-		
+
+
 
 
 </script>
